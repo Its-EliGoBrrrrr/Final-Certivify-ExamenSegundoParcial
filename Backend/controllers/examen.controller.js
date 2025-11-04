@@ -4,7 +4,6 @@ const QUESTIONS = require("../data/questions");
 const preguntasUsadas = [];
 const mensajesUsuarios = [];
 const PDFDocument = require('pdfkit');
-const questions = require("../data/questions");
 
 exports.login = (req, res) => {
   const { cuenta } = req.body || {};
