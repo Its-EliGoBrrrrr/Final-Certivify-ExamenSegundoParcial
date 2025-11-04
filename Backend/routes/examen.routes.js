@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { login, logout, getProfile, startQuiz, submitAnswers, obtenerPDF, enviarMensaje, pagarExamen, enterQuiz, accessMessage } = require("../controllers/examen.controller");
+const { login, logout, getProfile, startQuiz, submitAnswers, obtenerPDF, enviarMensaje, pagarExamen, accessMessage } = require("../controllers/examen.controller");
 const { verifyToken, verifyIntento, verifyPago, verifyIntentoListo, verifyAprobado, verifyPagoHecho } = require("../middleware/examen.middleware");
 
 // Rutas públicas
