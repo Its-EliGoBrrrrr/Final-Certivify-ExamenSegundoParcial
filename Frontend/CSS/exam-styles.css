@@ -1,0 +1,49 @@
+#exam-section {
+    width: 50rem;
+}
+
+#quizFom {
+    width: 100%;
+}
+
+.divide-main {
+    width: 90%;
+    height: .5rem;
+    border: 0;
+    background-color: #1f215f;
+    margin-bottom: 1rem;
+}
+
+.exam-button {
+    width: 12rem;
+    height: 4rem;
+
+    background-color: #1f215f;
+    color: #adb3d3;
+
+    border-radius: .5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.exam-button:hover {
+    background-color: #232d9a;
+    color: #f0f8ff;
+}
+
+.card {
+    border: 0;
+    background-color: #1f215f;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.ok {
+    color: rgb(5, 201, 5);
+}
+
+.bad {
+    color: red;
+}

@@ -1,0 +1,17 @@
+#main-introduction {
+    padding: 1rem;
+    max-width: 50rem;
+}
+
+#intro-image {
+    padding: 1rem;
+}
+
+#intro-image img{
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+#intro-text {
+    text-align: justify;
+}

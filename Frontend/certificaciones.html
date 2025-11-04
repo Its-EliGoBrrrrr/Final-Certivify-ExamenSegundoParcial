@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIVIFY - Certificaciones</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/imagenes/scroll-solid-full.svg">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/essencial-styles.css">
+    <link rel="stylesheet" href="./CSS/certificate-styles.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/d420dccc9b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./JS/login.js" defer></script>
+    <script src="./JS/certificate-pay-exam.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <h1><i class="fa-solid fa-scroll"></i> CERTIVIFY</h1>
+        </div>
+        <div id="header-right">
+            <div id="header-navigation">
+                <a href="./index.html">INICIO</a>
+                <a href="./certificaciones.html">NUESTRAS CERTIFICACIONES</a>
+                <a href="./contacto.html">CONTACTANOS</a>
+                <a href="./nosotros.html">SOBRE NOSOTROS</a>
+            </div>
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Login">
+                <span class="login-icon"><i class="fa-solid fa-lock"></i></span>
+            </button>
+            <button id="logoutBtn" class="icon-btn" title="Logout" style="display: none;">
+                <span class="logout-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </button>
+        </div>
+    </header>
+    
+    <main class="center-object">
+        <section class="main-section" id="section-cplusplus">
+            <div class="left-2">
+                <h1 class="text-big">C/C++</h1>
+                <p>
+                    C++ es un lenguaje de programación de propósito general con un amplio soporte de bibliotecas. Fue creado como una mejora del lenguaje C por Bjarne Stroustrup en 1979 en los Laboratorios Bell en Murray Hills, Nueva Jersey. 
+                </p>
+                <table>
+                    <tr>
+                        <th><h3>VENTAJAS</h3></th>
+                        <th><h3>DESVENTAJAS</h3></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>C++ ofrece portabilidad, lo que significa que es independiente de la plataforma.</li>
+                                <li>Admite diferentes bibliotecas con funciones para escribir código rápidamente.</li>
+                                <li>Proporciona un control completo sobre la gestión de la memoria.</li>
+                                <li>C++ ofrece mayor velocidad que otros lenguajes de programación de propósito general.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>C++ es más difícil de entender sintácticamente en comparación con lenguajes de programación más avanzados.</li>
+                                <li>C++ no ofrece soporte para recolección de basura, por lo que los programadores deben gestionar la memoria manualmente. Si no se gestiona de forma eficiente, puede provocar el almacenamiento de datos redundantes, aumentando así el uso de memoria.</li>
+                                <li>C++ no incluye soporte integrado para hilos. Esto supone una desventaja frente a otros lenguajes como Java, ya que complica considerablemente el proceso.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>Puntuación Mínima Requerida para Acreditar: 35/40</p>
+                <p>Tiempo para realizar el examen: 2hrs</p>
+                <p>Costo de aplicación del examen: $4,000</p>
+                <div class="left-button">
+                    <button class="pay-button" id="pay-cplusplus">PAGAR</button>
+                    <button class="exam-button" id="exam-cplusplus">APLICAR EXÁMEN</button>
+                </div>
+                <p>Disponible a partir del: 5 de noviembre de 2025</p>
+            </div>
+            <div class="right-1">
+                <img src="./Assets/imagenes/cplusplus-1.png" alt="">
+            </div>
+        </section>
+        <section class="main-section" id="section-csharp">
+            <div class="left-1">
+                <img src="./Assets/imagenes/csharp-1.jpg" alt="">
+            </div>
+            <div class="right-2">
+                <h1 class="text-big">C#</h1>
+                <p>
+                    C# permite a los desarrolladores crear diversas aplicaciones de software que se ejecutan en el marco de trabajo .NET de Windows. Se utiliza para desarrollar sistemas alojados y embebidos. Es posible encontrar el uso de C# en aplicaciones web y de escritorio, así como en videojuegos. La similitud de C# con los lenguajes de la familia C es otra razón de su popularidad y facilidad de aprendizaje.
+                </p>
+                <table>
+                    <tr>
+                        <th><h3>VENTAJAS</h3></th>
+                        <th><h3>DESVENTAJAS</h3></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Tiene un recolector de basura incorporado y es seguro contra errores de tipeo.</li>
+                                <li>Como lenguaje de programación orientado a objetos, C# produce aplicaciones más fáciles de probar y leer.</li>
+                                <li>Permite dar respuesta a cualquier problema que surja y proporciona un enfoque más eficiente para escribir código.</li>
+                                <li>Al ser un lenguaje de alto nivel, C# es más fácil de entender que un lenguaje de bajo nivel.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>C# requiere compilación del código cada vez que se realizan cambios, lo que puede provocar errores y fallos.</li>
+                                <li>El uso de bibliotecas .NET puede añadir otra capa de complejidad al aprendizaje de C#.</li>
+                                <li>Dado que C# forma parte del framework .NET, necesita la plataforma Windows para su ejecución.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>Puntuación Mínima Requerida para Acreditar: 20/25</p>
+                <p>Tiempo para realizar el examen: 1hr 30min</p>
+                <p>Costo de aplicación del examen: $3,500</p>
+                <div>
+                    <button class="pay-button" id="pay-csharp">PAGAR</button>
+                    <button class="exam-button" id="exam-csharp">APLICAR EXÁMEN</button>
+                </div>
+                <p>Disponible a partir del: 30 de diciembre de 2025</p>
+            </div>
+        </section>
+        <section class="main-section" id="section-java">
+            <div class="left-2">
+                <h1 class="text-big">JAVA</h1>
+                <p>
+                    Java es una plataforma informática de lenguaje de programación creada por Sun Microsystems en 1995. Ha evolucionado
+                    desde sus humildes comienzos hasta impulsar una gran parte del mundo digital actual, ya que es una plataforma fiable en la
+                    que se crean muchos servicios y aplicaciones. Los nuevos e innovadores productos y servicios digitales diseñados para el
+                    futuro también siguen basándose en Java.
+                </p>
+                <table>
+                    <tr>
+                        <th><h3>VENTAJAS</h3></th>
+                        <th><h3>DESVENTAJAS</h3></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Orientado a elementos: te permite crear proyectos estándar y código reutilizable.</li>
+                                <li>Java es un lenguaje distribuido, ya que proporciona una herramienta para compartir información y proyectos entre numerosos ordenadores, lo que mejora el rendimiento y la eficiencia del sistema.</li>
+                                <li>Es multihilo, tiene la capacidad de realizar numerosas tareas simultáneamente.</li>
+                                <li>Java fue diseñado para ser fácil de usar y, por lo tanto, es fácil de escribir, compilar, depurar y aprender que otros lenguajes de programación.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Es un lenguaje más lento en comparación con otros dialectos, ya que consume mucha memoria.</li>
+                                <li>Java requiere una gran cantidad de memoria, especialmente en comparación con otros lenguajes como C y C++.</li>
+                                <li>Los códigos Java son extensos, lo que significa que contienen numerosas palabras y frases largas y complejas difíciles de leer y comprender. Esto puede disminuir la claridad del código.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>Puntuación Mínima Requerida para Acreditar: 6/8</p>
+                <p>Tiempo para realizar el examen: 1hr</p>
+                <p>Costo de aplicación del examen: $5</p>
+                <div class="left-button">
+                    <button class="pay-button" id="pay-java">PAGAR</button>
+                    <button class="exam-button" id="exam-java">APLICAR EXÁMEN</button>
+                </div>
+            </div>
+            <div class="right-1">
+                <img src="./Assets/imagenes/java-1.png" alt="">
+            </div>
+        </section>
+        <section class="main-section" id="section-python">
+            <div class="left-1">
+                <img src="./Assets/imagenes/python-1.jpg" alt="">
+            </div>
+            <div class="right-2">
+                <h1 class="text-big">PYTHON</h1>
+                <p>
+                    Python es un lenguaje de programación orientado a objetos de alto nivel y fácil de interpretar con una sintaxis fácil de leer. Ideal para la creación de prototipos y tareas ad hoc, Python tiene un amplio uso en computación científica, desarrollo web y automatización. Como un lenguaje de programación para principiantes de uso general, Python es compatible con muchos de los principales científicos informáticos y desarrolladores de aplicaciones de todo el mundo.
+                </p>
+                <table>
+                    <tr>
+                        <th><h3>VENTAJAS</h3></th>
+                        <th><h3>DESVENTAJAS</h3></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Python es fácil de aprender y genera una sensación de éxito en poco tiempo.</li>
+                                <li>Python es muy versátil y flexible gracias a su diseño. Es multiplataforma por lo que puedes empezar un proyecto en un sistema operativo y continuar en otro.</li>
+                                <li>Un gran número de pequeños desarrolladores, sino también para muchas empresas de mayor tamaño. Google, Spotify, Uber y Netflix dependen total o parcialmente de Python.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Python a veces tiene deficiencias de velocidad, especialmente en comparación con sus competidores.</li>
+                                <li>Python tiene déficits notables en el desarrollo para dispositivos móviles, razón por la cual se escriben pocas aplicaciones móviles con este lenguaje de programación.</li>
+                                <li>Aunque Python, en general, es muy seguro, su enfoque dinámico puede llevar a descubrir errores durante la ejecución.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>Puntuación Mínima Requerida para Acreditar: 40/45</p>
+                <p>Tiempo para realizar el examen: 2hrs 30min</p>
+                <p>Costo de aplicación del examen: $4,500</p>
+                <div>
+                    <button class="pay-button" id="pay-python">PAGAR</button>
+                    <button class="exam-button" id="exam-python">APLICAR EXÁMEN</button>
+                </div>
+                <p>Disponible a partir del: 28 de febrero de 2026</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="center-object">
+        <div id="footer-top" class="footer-flex">
+            <div id="footer-info">
+                <h1>CERTIVIFY</h1>
+                <p>
+                    Puedes confiar en nuestros años de experiencia
+                    como proveedores en certificaciones en idiomas
+                    como C/C++, C#, Java y Python.
+                </p>
+            </div>
+            <div id="useful-links">
+                <h2>Links Útiles</h2>
+                <ul id="links-extras">
+                    <li><a href="#">Términos de Uso <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Centro de Ayuda <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Aviso de Privacidad <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer-bottom" class="footer-flex">
+            <h3 id="footer-copyright">© 2025 CERTIVIFY</h3>
+            <div id="social-media-list">
+                <a href="https://www.tumblr.com/certivify"><i class="fa-brands fa-tumblr fa-bounce"></i></a>
+                <a href="mailto:lacomunidaddeltropiezoxd@gmail.com"><i class="fa-solid fa-envelope fa-bounce"></i></a>
+            </div>
+        </div>
+        <p>Nota: Esto es un Projecto Escolar</p>
+    </footer>
+</body>
+</html>

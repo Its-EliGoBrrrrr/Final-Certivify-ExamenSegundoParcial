@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIVIFY - Exámen de Java</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/imagenes/scroll-solid-full.svg">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/essencial-styles.css">
+    <link rel="stylesheet" href="./CSS/exam-styles.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/d420dccc9b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./JS/login.js" defer></script>
+    <script src="./JS/evaluate.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <h1><i class="fa-solid fa-scroll"></i> CERTIVIFY</h1>
+        </div>
+        <div id="header-right">
+            <div id="header-navigation">
+                <a href="./index.html">INICIO</a>
+                <a href="./certificaciones.html">NUESTRAS CERTIFICACIONES</a>
+                <a href="./contacto.html">CONTACTANOS</a>
+                <a href="./nosotros.html">SOBRE NOSOTROS</a>
+            </div>
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Login">
+                <span class="login-icon"><i class="fa-solid fa-lock"></i></span>
+            </button>
+            <button id="logoutBtn" class="icon-btn" title="Logout" style="display: none;">
+                <span class="logout-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </button>
+        </div>
+    </header>
+    
+    <main class="center-object">
+        <section class="center-object">
+            <h1 class="text-big">EXAMEN DE CERTIFICACIÓN EN JAVA</h1>
+            <h2>TIEMPO PARA PODER REALIZAR EL EXAMEN: 1HR</h2>
+            <h3>MÍNIMO DE RESPUESTAS CORRECTAS PARA APROVAR: 6/8</h3>
+            <div id="top-button-container">
+                <button class="exam-button" id="btnIniciar">COMENZAR EXAMEN</button>
+            </div>
+        </section>
+        <hr class="divide-main">
+        <section id="exam-section">
+            <form id="quizForm" style="display:none;">
+                <div id="listaPreguntas"></div>
+                <div class="center-object">
+                    <button class="exam-button" type="submit">Enviar respuestas</button>
+                </div>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="center-object">
+        <div id="footer-top" class="footer-flex">
+            <div id="footer-info">
+                <h1>CERTIVIFY</h1>
+                <p>
+                    Puedes confiar en nuestros años de experiencia
+                    como proveedores en certificaciones en idiomas
+                    como C/C++, C#, Java y Python.
+                </p>
+            </div>
+            <div id="useful-links">
+                <h2>Links Útiles</h2>
+                <ul id="links-extras">
+                    <li><a href="#">Términos de Uso <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Centro de Ayuda <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Aviso de Privacidad <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer-bottom" class="footer-flex">
+            <h3 id="footer-copyright">© 2025 CERTIVIFY</h3>
+            <div id="social-media-list">
+                <a href="https://www.tumblr.com/certivify"><i class="fa-brands fa-tumblr fa-bounce"></i></a>
+                <a href="mailto:lacomunidaddeltropiezoxd@gmail.com"><i class="fa-solid fa-envelope fa-bounce"></i></a>
+            </div>
+        </div>
+        <p>Nota: Esto es un Projecto Escolar</p>
+    </footer>
+</body>
+</html>

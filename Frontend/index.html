@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIVIFY - Inicio</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/imagenes/scroll-solid-full.svg">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/essencial-styles.css">
+    <link rel="stylesheet" href="./CSS/index-styles.css">
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/d420dccc9b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./JS/login.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <h1><i class="fa-solid fa-scroll"></i> CERTIVIFY</h1>
+        </div>
+        <div id="header-right">
+            <div id="header-navigation">
+                <a href="./index.html">INICIO</a>
+                <a href="./certificaciones.html">NUESTRAS CERTIFICACIONES</a>
+                <a href="./contacto.html">CONTACTANOS</a>
+                <a href="./nosotros.html">SOBRE NOSOTROS</a>
+            </div>
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Login">
+                <span class="login-icon"><i class="fa-solid fa-lock"></i></span>
+            </button>
+            <button id="logoutBtn" class="icon-btn" title="Logout" style="display: none;">
+                <span class="logout-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </button>
+        </div>
+    </header>
+    
+    <main class="center-object">
+        <section id="section-introduction" class="main-section">
+            <div id="introduction-company" class="padding-2 center-object">
+                <h3>Certificate en diversos idiomas de programación con</h3>
+                <div class="center-object">
+                    <h1 class="text-big"><i class="fa-solid fa-scroll"></i> CERTIVIFY</h1>
+                    <h2 id="slogan">La excelencia en programación a tu alcance</h2>
+                </div>
+            </div>
+        </section>
+        <section id="section-offer" class="main-section">
+            <h2 class="service-title">Nuestras Certificaciones</h2>
+            <div class="service-grid">
+                <div class="service-card center-object">
+                    <div class="service-content">
+                        <img src="./Assets/imagenes/cplusplus-1.png" alt="">
+                        <h3>C/C++</h3>
+                        <p>
+                            C y C++ fueron de los primeros lenguajes de
+                            programación en ser creados y en tener un
+                            largo uso por la industria que, aunque no
+                            tan presente en la actualidad este sigue 
+                            siendo uno de los lenguajes elegidos por
+                            predilección al enseñarle a una persona a
+                            aprender a programar, además de que sigue
+                            siendo utilizado en areas particulares del
+                            área.
+                        </p>
+                    </div>
+                    <a href="./certificaciones.html#section-cplusplus"><button class="more-button">Descubre Más</button></a>
+                </div>
+                <div class="service-card center-object">
+                    <div class="service-content">
+                        <img src="./Assets/imagenes/csharp-1.jpg" alt="">
+                        <h3>C#</h3>
+                        <p>
+                            El lenguaje C# es el lenguaje más popular
+                            para la plataforma .NET, un entorno de
+                            desarrollo gratuito, multiplataforma y de
+                            código abierto. Los programas de C# se
+                            pueden ejecutar en muchos dispositivos
+                            diferentes, desde dispositivos de Internet de
+                            las cosas (IoT) a la nube y entre todas partes.
+                            Puede escribir aplicaciones para equipos y
+                            servidores móviles, de escritorio y portátiles.
+                        </p>
+                    </div>
+                    <a href="./certificaciones.html#section-csharp"><button class="more-button">Descubre Más</button></a>
+                </div>
+                <div class="service-card center-object">
+                    <div class="service-content">
+                        <img src="./Assets/imagenes/java-1.png" alt="">
+                        <h3>JAVA</h3>
+                        <p>
+                           Java es una plataforma informática de lenguaje de programación creada por Sun Microsystems en 1995. Ha evolucionado desde sus humildes comienzos hasta impulsar una gran parte del mundo digital actual, ya que es una plataforma fiable en la que se crean muchos servicios y aplicaciones. Los nuevos e innovadores productos y servicios digitales diseñados para el futuro también siguen basándose en Java.
+                        </p>
+                    </div>
+                    <a href="./certificaciones.html#section-java"><button class="more-button">Descubre Más</button></a>
+                </div>
+                <div class="service-card center-object">
+                    <div class="service-content">
+                        <img src="./Assets/imagenes/python-1.jpg" alt="">
+                        <h3>PYTHON</h3>
+                        <p>
+                            Python es un lenguaje de programación orientado a objetos de alto nivel y fácil de interpretar con una sintaxis fácil de leer. Ideal para la creación de prototipos y tareas ad hoc, Python tiene un amplio uso en computación científica, desarrollo web y automatización. Como un lenguaje de programación para principiantes de uso general, Python es compatible con muchos de los principales científicos informáticos y desarrolladores de aplicaciones de todo el mundo.
+                        </p>
+                    </div>
+                    <a href="./certificaciones.html#section-python"><button class="more-button">Descubre Más</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="section-us" class="main-section">
+            <div class="left-1">
+                <img src="./Assets/imagenes/program-background-2.jpg" alt="">
+            </div>
+            <div class="right-2">
+                <h1 class="text-big">NOS AVALAN</h1>
+                <h3>NO REALMENTE PORQUE ESTO ES UN PROJECTO ESCOLAR</h3>
+                <hr class="divide-index">
+                <p>
+                    Empresas como Google, Oracle y Cisco han avalado nuestras certificaciones, entonces puedes estar asegurado que con nuestras
+                    certificaciones usted podrá acceder a un sin fin de posibilidades en el mundo laboral del desarrollo
+                </p>
+                <hr class="divide-index">
+                <h3>¿QUIERES DESCUBRIR MÁS?</h3>
+                <br>
+                <p>Siente libre de visitar nuestra página sobre nosotros para que conozcas al equipo detrás de CERTIVIFY</p>
+                <a href="./nosotros.html"><button class="more-button" id="btnNosotros">Descubre Más</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="center-object">
+        <div id="footer-top" class="footer-flex">
+            <div id="footer-info">
+                <h1>CERTIVIFY</h1>
+                <p>
+                    Puedes confiar en nuestros años de experiencia
+                    como proveedores en certificaciones en idiomas
+                    como C/C++, C#, Java y Python.
+                </p>
+            </div>
+            <div id="useful-links">
+                <h2>Links Útiles</h2>
+                <ul id="links-extras">
+                    <li><a href="#">Términos de Uso <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Centro de Ayuda <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Aviso de Privacidad <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer-bottom" class="footer-flex">
+            <h3 id="footer-copyright">© 2025 CERTIVIFY</h3>
+            <div id="social-media-list">
+                <a href="https://www.tumblr.com/certivify"><i class="fa-brands fa-tumblr fa-bounce"></i></a>
+                <a href="mailto:lacomunidaddeltropiezoxd@gmail.com"><i class="fa-solid fa-envelope fa-bounce"></i></a>
+            </div>
+        </div>
+        <p>Nota: Esto es un Projecto Escolar</p>
+    </footer>
+</body>
+</html>
