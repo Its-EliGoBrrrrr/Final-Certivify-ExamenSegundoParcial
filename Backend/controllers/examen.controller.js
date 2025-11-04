@@ -4,6 +4,7 @@ const QUESTIONS = require("../data/questions");
 const preguntasUsadas = [];
 const mensajesUsuarios = [];
 const PDFDocument = require('pdfkit');
+const questions = require("../data/questions");
 
 exports.login = (req, res) => {
   const { cuenta } = req.body || {};
@@ -100,8 +101,10 @@ exports.submitAnswers = (req, res) => {
     let score = 0;
     const details = [];
 
-    for (const q of preguntasUsadas) {
+    for (const q of QUESTIONS) {
         const user = userAnswers.find(a => a.id === q.id);
+        if(!user)
+          continue;
 
         const isCorrect = !!user && user.answer === q.correct;
 
@@ -218,12 +221,12 @@ exports.enviarMensaje = (req, res) => {
       });
     }
 
-    const mensajeNuevo = [
+    const mensajeNuevo = {
       nombre,
       correo,
       asunto,
       mensaje
-    ];
+    };
 
     mensajesUsuarios.push(mensajeNuevo);
     console.log(mensajesUsuarios);
